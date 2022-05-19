@@ -35,6 +35,11 @@ $routes->get('/', 'Home::index');
 
 $routes->resource('Datamahasiswa');
 
+
+//Laboran
+$routes->resource('Laboran');
+$routes->resource('Laboran/addlaboran');
+
 /*
  * --------------------------------------------------------------------
  * Additional Routing
