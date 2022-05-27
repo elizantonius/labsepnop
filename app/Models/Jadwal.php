@@ -4,17 +4,17 @@ namespace App\Models;
 
 use CodeIgniter\Model;
 
-class Mahasiswa extends Model
+class Jadwal extends Model
 {
     protected $DBGroup          = 'default';
-    protected $table            = 'mahasiswa';
+    protected $table            = 'jadwal';
     protected $primaryKey       = 'id';
     protected $useAutoIncrement = true;
     protected $insertID         = 0;
     protected $returnType       = 'array';
     protected $useSoftDeletes   = false;
     protected $protectFields    = true;
-    protected $allowedFields    = ['id', 'nama_mahasiswa', 'jenis_kelamin', 'tanggal_lahir', 'id_perguruan_tinggi', 'id_mahasiswa', 'id_agama', 'nama_agama', 'id_prodi', 'nama_program_studi', 'nama_status_mahasiswa', 'nim', 'id_periode', 'nama_periode_masuk', 'user_id', 'created_at', 'updated_at', 'deleted_at'];
+    protected $allowedFields    = ['id', 'ta_id', 'kelas_id', 'laboran_id', 'id_matakuliah', 'nama_matakuliah', 'laboran_user_id', 'hari', 'tanggal', 'jam'];
 
     // Dates
     protected $useTimestamps = false;

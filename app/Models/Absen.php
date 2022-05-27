@@ -4,17 +4,17 @@ namespace App\Models;
 
 use CodeIgniter\Model;
 
-class TaM extends Model
+class Absen extends Model
 {
     protected $DBGroup          = 'default';
-    protected $table            = 'ta';
+    protected $table            = 'absen';
     protected $primaryKey       = 'id';
     protected $useAutoIncrement = true;
     protected $insertID         = 0;
     protected $returnType       = 'array';
     protected $useSoftDeletes   = false;
     protected $protectFields    = true;
-    protected $allowedFields    = ['id', 'tahun', 'semester'];
+    protected $allowedFields    = ['pertemuan, hari, jam', 'detailkrs_id'];
 
     // Dates
     protected $useTimestamps = false;

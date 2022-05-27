@@ -4,17 +4,17 @@ namespace App\Models;
 
 use CodeIgniter\Model;
 
-class LaboranM extends Model
+class Modul extends Model
 {
     protected $DBGroup          = 'default';
-    protected $table            = 'laboran';
+    protected $table            = 'moduls';
     protected $primaryKey       = 'id';
     protected $useAutoIncrement = true;
     protected $insertID         = 0;
     protected $returnType       = 'array';
     protected $useSoftDeletes   = false;
     protected $protectFields    = true;
-    protected $allowedFields    = ['id', 'user_id', 'nama_laboran', 'semester', 'no_telp', 'jurusan_id', 'mahasiswa_id'];
+    protected $allowedFields    = [];
 
     // Dates
     protected $useTimestamps = false;

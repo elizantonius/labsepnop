@@ -4,17 +4,17 @@ namespace App\Models;
 
 use CodeIgniter\Model;
 
-class MatakuliahM extends Model
+class Krs extends Model
 {
     protected $DBGroup          = 'default';
-    protected $table            = 'matakuliah';
+    protected $table            = 'krs';
     protected $primaryKey       = 'id';
     protected $useAutoIncrement = true;
     protected $insertID         = 0;
     protected $returnType       = 'array';
     protected $useSoftDeletes   = false;
     protected $protectFields    = true;
-    protected $allowedFields    = ['id', 'nama_matkul', 'sks', 'semster', 'dosen_matkul'];
+    protected $allowedFields    = ['id', 'npm', 'nama_mhs', 'ta_id', 'user_id', 'id_mahasiswa', 'jenis_kelamin', 'tanggal_lahir', 'id_perguruan_tinggi', 'id_agama', 'nama_agama', 'id_prodi', 'nama_program_studi', 'nama_status_mahasiswa', 'id_periode', 'created_at', 'updated_at', 'deleted_at'];
 
     // Dates
     protected $useTimestamps = false;

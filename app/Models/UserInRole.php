@@ -4,17 +4,17 @@ namespace App\Models;
 
 use CodeIgniter\Model;
 
-class AbsenM extends Model
+class UserInRole extends Model
 {
     protected $DBGroup          = 'default';
-    protected $table            = 'absen';
+    protected $table            = 'user_in_role';
     protected $primaryKey       = 'id';
     protected $useAutoIncrement = true;
     protected $insertID         = 0;
     protected $returnType       = 'array';
     protected $useSoftDeletes   = false;
     protected $protectFields    = true;
-    protected $allowedFields    = ['id', 'kelas_id', 'mahasiswa_id', 'matakuliah_id', 'pertemuan', 'semester', 'hari', 'tanggal', 'jam'];
+    protected $allowedFields    = ['id', 'user_id', 'role_id'];
 
     // Dates
     protected $useTimestamps = false;

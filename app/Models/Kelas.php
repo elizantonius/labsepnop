@@ -4,7 +4,7 @@ namespace App\Models;
 
 use CodeIgniter\Model;
 
-class KelasM extends Model
+class Kelas extends Model
 {
     protected $DBGroup          = 'default';
     protected $table            = 'kelas';
@@ -14,7 +14,7 @@ class KelasM extends Model
     protected $returnType       = 'array';
     protected $useSoftDeletes   = false;
     protected $protectFields    = true;
-    protected $allowedFields    = ['id', 'mahasiswa_id', 'jadwal_id', 'kode_kelas', 'kelas'];
+    protected $allowedFields    = ['id', 'kode_kelas', 'kelas'];
 
     // Dates
     protected $useTimestamps = false;
