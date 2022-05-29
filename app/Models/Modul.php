@@ -7,14 +7,14 @@ use CodeIgniter\Model;
 class Modul extends Model
 {
     protected $DBGroup          = 'default';
-    protected $table            = 'moduls';
+    protected $table            = 'modul';
     protected $primaryKey       = 'id';
     protected $useAutoIncrement = true;
     protected $insertID         = 0;
     protected $returnType       = 'array';
     protected $useSoftDeletes   = false;
     protected $protectFields    = true;
-    protected $allowedFields    = [];
+    protected $allowedFields    = ['id', 'nama_modul', 'id_matakuliah', 'nama_matakuliah', 'semester'];
 
     // Dates
     protected $useTimestamps = false;

@@ -34,6 +34,14 @@ $routes->setAutoRoute(true);
 $routes->get('/', 'Home::index');
 
 
+//Mahasiswa(KRS)
+$routes->resource('KrsMhs');
+
+
+//Matakuliah(DetailKrs)
+$routes->resource('DtlKrs');
+
+
 /*
  * --------------------------------------------------------------------
  * Additional Routing

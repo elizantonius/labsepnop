@@ -1,24 +1,20 @@
 <?php
 
 namespace App\Controllers;
-
 use CodeIgniter\RESTful\ResourceController;
 use CodeIgniter\API\ResponseTrait;
-use App\Models\Krs;
+use App\Models\Detailkrs;
 use CodeIgniter\HTTP\RequestTrait;
 
-class KrsMhs extends ResourceController
+class DtlKrs extends ResourceController
 {
-    //protected $rest;
-
     use RequestTrait;
     use ResponseTrait;
 
     public function index()
     {
-        $model = new Krs();
+        $model = new Detailkrs();
         $data = $model->findAll();
-        return $this->respond($data, 200);
-        
+        return $this->respond($data,200);
     }
 }
