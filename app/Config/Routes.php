@@ -35,11 +35,17 @@ $routes->get('/', 'Home::index');
 
 
 //Mahasiswa(KRS)
-$routes->resource('KrsMhs');
+$routes->resource('api/KrsMhs');
 
 
 //Matakuliah(DetailKrs)
-$routes->resource('DtlKrs');
+$routes->resource('api/DtlKrs');
+
+//Praktikum
+$routes->resource('api/JadwalPraktikum');
+$routes->resource('api/JadwalPraktikum/addJadwal');
+$routes->resource('api/ModulRest');
+$routes->resource('api/ModulRest/addModul');
 
 
 /*
