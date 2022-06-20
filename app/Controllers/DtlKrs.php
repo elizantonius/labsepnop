@@ -17,4 +17,12 @@ class DtlKrs extends ResourceController
         $data = $model->findAll();
         return $this->respond($data,200);
     }
+
+    public function Matkulprak(){
+
+        $model = new Detailkrs();
+        $data = $this->request->getJSON();
+        $model->insert($data);
+        return $this->respondCreated($data);
+    }
 }

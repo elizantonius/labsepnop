@@ -39,7 +39,8 @@ $routes->resource('api/KrsMhs');
 
 
 //Matakuliah(DetailKrs)
-$routes->resource('api/DtlKrs');
+$routes->resource('DtlKrs');
+$routes->resource('DtlKrs/Matkulprak');
 
 //Praktikum
 $routes->resource('api/JadwalPraktikum');
