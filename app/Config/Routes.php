@@ -35,22 +35,27 @@ $routes->get('/', 'Home::index');
 
 
 //Mahasiswa(KRS)
-$routes->resource('KrsMhs');
+$routes->get('krsmhs', 'KrsMhs::index');
+$routes->post('krsmhs/addmahasiswa', 'KrsMhs::addmahasiswa');
 
 
 //Matakuliah(DetailKrs)
-$routes->resource('/api/DtlKrs');
+$routes->resource('DtlKrs');
 $routes->resource('DtlKrs/Matkulprak');
 
 //Praktikum
-$routes->resource('api/JadwalPraktikum');
-$routes->resource('api/JadwalPraktikum/addJadwal');
-$routes->resource('api/ModulRest');
-$routes->resource('api/ModulRest/addModul');
+$routes->resource('JadwalPraktikum');
+$routes->resource('JadwalPraktikum/addJadwal');
+$routes->resource('ModulRest');
+$routes->resource('ModulRest/addModul');
 
 //Tahun Akademik
 $routes->get('tahunakademik', 'Tahunakademik::index');
 $routes->post('tahunakademik/addta', 'Tahunakademik::addta');
+
+//User
+$routes->get('user', 'Userss::index');
+$routes->post('user/addusers', 'Userss::addusers');
 
 
 
