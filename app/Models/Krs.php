@@ -14,7 +14,7 @@ class Krs extends Model
     protected $returnType       = 'array';
     protected $useSoftDeletes   = false;
     protected $protectFields    = true;
-    protected $allowedFields    = ['id', 'npm', 'nama_mhs', 'ta_id', 'user_id', 'id_mahasiswa', 'jenis_kelamin', 'tanggal_lahir', 'id_perguruan_tinggi', 'id_agama', 'nama_agama', 'id_prodi', 'nama_program_studi', 'nama_status_mahasiswa', 'id_periode', 'created_at', 'updated_at', 'deleted_at'];
+    protected $allowedFields    = ['id', 'npm', 'nama_mhs', 'ta_id', 'user_id', 'id_mahasiswa', 'jenis_kelamin', 'tanggal_lahir', 'id_perguruan_tinggi', 'id_agama', 'nama_agama', 'id_prodi', 'nama_program_studi', 'nama_status_mahasiswa', 'id_periode','password', 'created_at', 'updated_at', 'deleted_at'];
 
     // Dates
     protected $useTimestamps = false;

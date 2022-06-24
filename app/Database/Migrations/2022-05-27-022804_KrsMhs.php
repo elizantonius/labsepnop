@@ -67,6 +67,10 @@ class KrsMhs extends Migration
                 'type' => 'VARCHAR',
                 'constraint' => '50'
             ],
+            'password' => [
+                'type' => 'VARCHAR',
+                'constraint' => '50'
+            ],
             'created_at' => [
                 'type' => 'DATE'
             ],
