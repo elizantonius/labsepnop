@@ -15,9 +15,15 @@ class Userss extends ResourceController
 
     public function index()
     {
-        $model = new User();
-        $data = $model->findAll();
-        return $this->respond($data,200);
+        $curl = \Config\Services::curlrequest();
+        $simpan = $curl->request('get', 'https://jsonplaceholder.typicode.com/posts', [
+            'headers' => [
+                'Accept' => 'aplications/json'
+            ]
+        ]);
+
+        echo "<pre>";
+		print_r($simpan);
     }
 
     public function addusers(){
