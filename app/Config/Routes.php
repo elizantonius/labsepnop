@@ -37,11 +37,13 @@ $routes->get('/', 'Home::index');
 //Mahasiswa(KRS)
 $routes->get('krsmhs', 'KrsMhs::index');
 $routes->post('krsmhs/addmahasiswa', 'KrsMhs::addmahasiswa');
+$routes->get('krsmhs/ambildata', 'KrsMhs::ambildata');
 
 
 //Matakuliah(DetailKrs)
 $routes->resource('DtlKrs');
 $routes->resource('DtlKrs/Matkulprak');
+$routes->get('dtlkrs/ambildata', 'DtlKrs::ambildata');
 
 //Praktikum
 $routes->resource('JadwalPraktikum');

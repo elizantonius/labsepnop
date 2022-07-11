@@ -29,4 +29,17 @@ class KrsMhs extends ResourceController
         $model->insert($data);
         return $this->respondCreated($data);
     }
+
+    public function ambildata(){
+        
+        $curl = \Config\Services::curlrequest();
+        $simpan = $curl->request('get', 'https://jsonplaceholder.typicode.com/posts', [
+            'headers' => [
+                'Accept' => 'aplications/json'
+            ]
+        ]);
+
+        echo "<pre>";
+		print_r($simpan);
+    }
 }
