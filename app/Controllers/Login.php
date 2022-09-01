@@ -5,6 +5,7 @@ namespace App\Controllers;
 use CodeIgniter\RESTful\ResourceController;
 use CodeIgniter\API\ResponseTrait;
 use App\Models\Krs;
+use Firebase\JWT\JWT;
 
 class Login extends ResourceController
 {
@@ -32,6 +33,17 @@ class Login extends ResourceController
        $verifikasi = password_verify($this->request->getVar('password'), $user['password']);
        if(!$verifikasi) return $this->fail('Kata sandi salah');
         
+       $kunci = getenv('TOKEN_SECRET');
+       $payload = array(
+           'iat' => 1356999524,
+           'nbf' => 1357000000,
+           'uid' => $user['id'],
+           'npm' => $user['npm']
+       );
+
+       $token = JWT::encode($payload, $kunci, 'HS256');
+
+       return $this->respond($token);
     }
 
 
