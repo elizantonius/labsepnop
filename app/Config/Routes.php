@@ -34,6 +34,9 @@ $routes->setAutoRoute(true);
 $routes->get('/', 'Home::index');
 
 
+//Umum
+$routes->post('login', 'Login::index');
+
 //Mahasiswa(KRS)
 $routes->get('krsmhs', 'KrsMhs::index');
 $routes->post('krsmhs/addmahasiswa', 'KrsMhs::addmahasiswa');

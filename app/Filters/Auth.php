@@ -2,9 +2,13 @@
 
 namespace App\Filters;
 
+use CodeIgniter\Config\Services;
 use CodeIgniter\Filters\FilterInterface;
 use CodeIgniter\HTTP\RequestInterface;
+use CodeIgniter\HTTP\Response;
 use CodeIgniter\HTTP\ResponseInterface;
+use Firebase\JWT\JWT;
+use Predis\Response\ResponseInterface as ResponseResponseInterface;
 
 class Auth implements FilterInterface
 {
@@ -25,7 +29,16 @@ class Auth implements FilterInterface
      */
     public function before(RequestInterface $request, $arguments = null)
     {
-        //
+        $kunci = getenv('TOKEN_SECRET');
+        $header = $request->getServer('HTTP_AUTHORIZATION');
+        if(!$header) return Services::response()->setJSON(['msg' => 'Token Required'])->setStatusCode(ResponseInterface::HTTP_UNAUTHORIZED);
+        $token = explode(' ', $header)[1];
+
+        try{
+            JWT::decode($token, $kunci, ['HS256']);
+        }catch(\Throwable $th){
+            return Services::response()->setJSON(['msg' => 'Invalid Token'])->setStatusCode(ResponseInterface::HTTP_UNAUTHORIZED);
+        }
     }
 
     /**
