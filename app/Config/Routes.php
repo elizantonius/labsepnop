@@ -36,6 +36,7 @@ $routes->get('/', 'Home::index');
 
 //Umum
 $routes->post('login', 'Login::index');
+$routes->get('tahunakademik/getta', 'Tahunakademik::getTA');
 
 //Mahasiswa(KRS)
 $routes->get('krsmhs', 'KrsMhs::index');
