@@ -3,8 +3,6 @@
 namespace App\Controllers;
 
 use CodeIgniter\RESTful\ResourceController;
-use CodeIgniter\API\ResponseTrait;
-use App\Models\Krs;
 use Firebase\JWT\JWT;
 
 class Dashboard extends ResourceController
@@ -18,18 +16,21 @@ class Dashboard extends ResourceController
     {
         $kunci = getenv('TOKEN_SECRET');
         $header = $this->request->getVar('HTTP_AUTHORIZATION');
-        if(!$header) return $this->failUnauthorized('Token Required');
+        if (!$header) {
+            return $this->failUnauthorized('Token Required');
+        }
+
         $token = explode(' ', $header)[1];
 
-        try{
+        try {
             $decode = JWT::decode($token, $kunci, ['HS256']);
             $response = [
                 'id' => $decode->uid,
-                'npm' => $decode->npm
+                'npm' => $decode->npm,
             ];
 
             return $this->respond($response);
-        } catch(\Throwable $th){
+        } catch (\Throwable$th) {
             return $this->fail('Invalid Token');
         }
 
@@ -40,6 +41,16 @@ class Dashboard extends ResourceController
      *
      * @return mixed
      */
+
+    public function dash()
+    {
+        $data = [
+            'title' => 'Mahasiswa | Dashboard',
+            'subtitle' => 'Dashboard',
+        ];
+        echo view('index', $data);
+    }
+
     public function show($id = null)
     {
         //
@@ -50,8 +61,7 @@ class Dashboard extends ResourceController
      *
      * @return mixed
      */
-    public function new()
-    {
+    function new () {
         //
     }
 

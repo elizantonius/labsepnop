@@ -31,8 +31,8 @@ $routes->setAutoRoute(true);
 
 // We get a performance increase by specifying the default
 // route since we don't have to scan directories.
-$routes->get('/', 'Home::index');
-
+// $routes->get('/', 'Home::index');
+$routes->get('/', 'Dashboard::dash');
 
 //Umum
 $routes->post('login', 'Login::index');
@@ -42,7 +42,6 @@ $routes->get('tahunakademik/getta', 'Tahunakademik::getTA');
 $routes->get('krsmhs', 'KrsMhs::index');
 $routes->post('krsmhs/addmahasiswa', 'KrsMhs::addmahasiswa');
 $routes->get('krsmhs/ambildata', 'KrsMhs::ambildata');
-
 
 //Matakuliah(DetailKrs)
 $routes->resource('DtlKrs');
@@ -62,8 +61,6 @@ $routes->post('tahunakademik/addta', 'Tahunakademik::addta');
 //User
 $routes->get('user', 'Userss::index');
 $routes->post('user/addusers', 'Userss::addusers');
-
-
 
 /*
  * --------------------------------------------------------------------
