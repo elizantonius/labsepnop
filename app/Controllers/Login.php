@@ -18,6 +18,17 @@ class Login extends ResourceController
      use ResponseTrait;
     public function index()
     {
+        $data = [
+            'Login'
+        ];
+
+        echo view('login', $data);
+      
+    }
+
+
+    public function login(){
+
         $model = new Krs();
         helper(['form']);
         
@@ -44,6 +55,8 @@ class Login extends ResourceController
        $token = JWT::encode($payload, $kunci, 'HS256');
 
        return $this->respond($token);
+
+
     }
 
 
