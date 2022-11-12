@@ -45,7 +45,7 @@ class Dashboard extends ResourceController
     public function dash()
     {
         $data = [
-            'title' => 'Mahasiswa | Dashboard',
+            'title' => 'Dashboard | Laboratorim',
             'subtitle' => 'Dashboard',
         ];
         echo view('index', $data);
