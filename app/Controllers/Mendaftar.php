@@ -3,9 +3,6 @@
 namespace App\Controllers;
 
 use CodeIgniter\RESTful\ResourceController;
-use CodeIgniter\API\ResponseTrait;
-use App\Models\Krs;
-
 
 class Mendaftar extends ResourceController
 {
@@ -19,8 +16,16 @@ class Mendaftar extends ResourceController
         helper(['form']);
         $rules = [
 
-
         ];
+    }
+
+    public function regis()
+    {
+        $data = [
+            'title' => 'Registrasi | Laboratorium STIMIK SEPULUH NOPEMBER',
+        ];
+
+        echo view('v_registrasi', $data);
     }
 
     /**
@@ -38,8 +43,7 @@ class Mendaftar extends ResourceController
      *
      * @return mixed
      */
-    public function new()
-    {
+    function new () {
         //
     }
 

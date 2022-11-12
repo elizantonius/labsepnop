@@ -1,5 +1,6 @@
 <?=$this->extend('auth_template');?>
 <?=$this->section('auth_content');?>
+
 <div class="card" style="width: 24rem; align-items: center;">
   <div class="card-body">
     <form>
@@ -9,15 +10,18 @@
         </div>
       </div>
       <div class="form-group">
-        <input type="email" class="form-control form-control-user" id="exampleInputEmail" aria-describedby="emailHelp"
-          placeholder="NPM">
+        <input type="text" class="form-control form-control-user" id="exampleInputEmail" aria-describedby="emailHelp"
+          placeholder="Nama">
       </div>
       <div class="form-group">
-        <input type="password" class="form-control form-control-user" id="exampleInputPassword" placeholder="Password">
+        <input type="text" class="form-control form-control-user" id="exampleInputPassword" placeholder="NPM">
+      </div>
+      <div class="form-group">
+        <input type="text" class="form-control form-control-user" id="exampleInputPassword" placeholder="NPM">
       </div>
 
       <button type="submit" class="btn btn-primary btn-user btn-block">Masuk</button>
     </form>
   </div>
-</div>
-<?=$this->endsection();?>
+
+<?=$this->endsection();

@@ -2,9 +2,9 @@
 
 namespace App\Controllers;
 
-use CodeIgniter\RESTful\ResourceController;
-use CodeIgniter\API\ResponseTrait;
 use App\Models\Krs;
+use CodeIgniter\API\ResponseTrait;
+use CodeIgniter\RESTful\ResourceController;
 use Firebase\JWT\JWT;
 
 class Login extends ResourceController
@@ -15,49 +15,55 @@ class Login extends ResourceController
      * @return mixed
      */
 
-     use ResponseTrait;
+    use ResponseTrait;
     public function index()
     {
         $data = [
-            'Login'
+            'title' => 'Login | Laboratorium STIMIK SEPULUH NOPEMBER',
+            'Login',
         ];
 
         echo view('login', $data);
-      
+
     }
 
-
-    public function login(){
+    public function login()
+    {
 
         $model = new Krs();
         helper(['form']);
-        
+
         $rules = [
             'npm' => 'required',
-            'password' => 'required| max_length[50]'
+            'password' => 'required| max_length[50]',
         ];
 
-       if(!$this->validate($rules)) return $this->fail($this->validator->getErrors());
-       $user = $model->where('npm', $this->request->getVar('npm'))->first();
-       if(!$user) return $this->failNotFound('NPM tidak ditemukan');
+        if (!$this->validate($rules)) {
+            return $this->fail($this->validator->getErrors());
+        }
 
-       $verifikasi = password_verify($this->request->getVar('password'), $user['password']);
-       if(!$verifikasi) return $this->fail('Kata sandi salah');
-        
-       $kunci = getenv('TOKEN_SECRET');
-       $payload = array(
-           'iat' => 1356999524,
-           'nbf' => 1357000000,
-           'uid' => $user['id'],
-           'npm' => $user['npm']
-       );
+        $user = $model->where('npm', $this->request->getVar('npm'))->first();
+        if (!$user) {
+            return $this->failNotFound('NPM tidak ditemukan');
+        }
 
-       $token = JWT::encode($payload, $kunci, 'HS256');
+        $verifikasi = password_verify($this->request->getVar('password'), $user['password']);
+        if (!$verifikasi) {
+            return $this->fail('Kata sandi salah');
+        }
 
-       return $this->respond($token);
+        $kunci = getenv('TOKEN_SECRET');
+        $payload = array(
+            'iat' => 1356999524,
+            'nbf' => 1357000000,
+            'uid' => $user['id'],
+            'npm' => $user['npm'],
+        );
 
+        $token = JWT::encode($payload, $kunci, 'HS256');
+
+        return $this->respond($token);
 
     }
-
 
 }
