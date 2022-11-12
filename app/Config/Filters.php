@@ -66,5 +66,7 @@ class Filters extends BaseConfig
      *
      * @var array
      */
-    public $filters = [];
+    public $filters = [
+        // 'login' => ['before' => ['Dasboard', 'Admin/Home', 'Admin/Tabel', 'Sales', 'Sales/Home']],
+    ];
 }
