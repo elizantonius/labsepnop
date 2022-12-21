@@ -17,6 +17,8 @@
       </div>
 
       <button type="submit" class="btn btn-primary btn-user btn-block">Masuk</button>
+      <hr>
+      <p>Belum punya akun lab? Silahkan <a href="<?= base_url('/regis')?>">Mendaftar!</a></p>
     </form>
   </div>
 </div>

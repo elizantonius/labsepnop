@@ -24,7 +24,7 @@
 
       <ul class="nav nav-pills">
 
-        <!-- <li class="nav-item"><a href="#" class="nav-link">Mendaftar</a></li> -->
+        <!-- <li class="nav-item"><a href="<?= base_url('/regis') ?>" class="nav-link">Mendaftar</a></li> -->
       </ul>
     </header>
   </div>

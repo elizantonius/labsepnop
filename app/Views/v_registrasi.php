@@ -20,7 +20,9 @@
         <input type="text" class="form-control form-control-user" id="exampleInputPassword" placeholder="NPM">
       </div>
 
-      <button type="submit" class="btn btn-primary btn-user btn-block">Masuk</button>
+      <button type="submit" class="btn btn-primary btn-user btn-block">Daftar</button>
+      <hr>
+      <p>Sudah punya akun lab? Silahkan <a href="<?= base_url('/')?>">Masuk!</a></p>
     </form>
   </div>
 
