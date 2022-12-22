@@ -1,4 +1,4 @@
-<?=$this->extend('template');?>
+<?=$this->extend('laboran/template');?>
 <?=$this->section('content');?>
 
 

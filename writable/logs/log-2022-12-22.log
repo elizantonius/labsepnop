@@ -9,3 +9,73 @@ CRITICAL - 2022-12-22 02:25:04 --> There is no data to insert.
 #7 E:\KP\labsepnop\public\index.php(37): CodeIgniter\CodeIgniter->run()
 #8 E:\KP\labsepnop\system\Commands\Server\rewrite.php(43): require_once('E:\\KP\\labsepnop...')
 #9 {main}
+CRITICAL - 2022-12-22 05:10:39 --> Invalid file: ../template.php
+#0 E:\KP\labsepnop\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('../template.php')
+#1 E:\KP\labsepnop\system\View\View.php(226): CodeIgniter\View\View->render('../template', Array, true)
+#2 E:\KP\labsepnop\system\Common.php(1089): CodeIgniter\View\View->render('laboran/index', Array, true)
+#3 E:\KP\labsepnop\app\Controllers\Laboran\Dashboard.php(15): view('laboran/index', Array)
+#4 E:\KP\labsepnop\system\CodeIgniter.php(832): App\Controllers\Laboran\Dashboard->index()
+#5 E:\KP\labsepnop\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laboran\Dashboard))
+#6 E:\KP\labsepnop\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 E:\KP\labsepnop\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 E:\KP\labsepnop\system\Commands\Server\rewrite.php(43): require_once('E:\\KP\\labsepnop...')
+#9 {main}
+CRITICAL - 2022-12-22 05:14:09 --> Undefined variable $title
+#0 E:\KP\labsepnop\app\Views\laboran\template.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'E:\\KP\\labsepnop...', 12)
+#1 E:\KP\labsepnop\system\View\View.php(210): include('E:\\KP\\labsepnop...')
+#2 E:\KP\labsepnop\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 E:\KP\labsepnop\system\Common.php(1089): CodeIgniter\View\View->render('laboran/templat...', Array, true)
+#4 E:\KP\labsepnop\app\Controllers\Laboran\Dashboard.php(15): view('laboran/templat...')
+#5 E:\KP\labsepnop\system\CodeIgniter.php(832): App\Controllers\Laboran\Dashboard->index()
+#6 E:\KP\labsepnop\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laboran\Dashboard))
+#7 E:\KP\labsepnop\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 E:\KP\labsepnop\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 E:\KP\labsepnop\system\Commands\Server\rewrite.php(43): require_once('E:\\KP\\labsepnop...')
+#10 {main}
+CRITICAL - 2022-12-22 05:37:33 --> Invalid file: ../template.php
+#0 E:\KP\labsepnop\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('../template.php')
+#1 E:\KP\labsepnop\system\View\View.php(226): CodeIgniter\View\View->render('../template', Array, true)
+#2 E:\KP\labsepnop\system\Common.php(1089): CodeIgniter\View\View->render('laboran/index', Array, true)
+#3 E:\KP\labsepnop\app\Controllers\Laboran\Dashboard.php(15): view('laboran/index', Array)
+#4 E:\KP\labsepnop\system\CodeIgniter.php(832): App\Controllers\Laboran\Dashboard->index()
+#5 E:\KP\labsepnop\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laboran\Dashboard))
+#6 E:\KP\labsepnop\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 E:\KP\labsepnop\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 E:\KP\labsepnop\system\Commands\Server\rewrite.php(43): require_once('E:\\KP\\labsepnop...')
+#9 {main}
+CRITICAL - 2022-12-22 05:41:54 --> Invalid file: ../template.php
+#0 E:\KP\labsepnop\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('../template.php')
+#1 E:\KP\labsepnop\system\View\View.php(226): CodeIgniter\View\View->render('../template', Array, true)
+#2 E:\KP\labsepnop\system\Common.php(1089): CodeIgniter\View\View->render('laboran/index', Array, true)
+#3 E:\KP\labsepnop\app\Controllers\Laboran\Dashboard.php(15): view('laboran/index', Array)
+#4 E:\KP\labsepnop\system\CodeIgniter.php(832): App\Controllers\Laboran\Dashboard->index()
+#5 E:\KP\labsepnop\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laboran\Dashboard))
+#6 E:\KP\labsepnop\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 E:\KP\labsepnop\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 E:\KP\labsepnop\system\Commands\Server\rewrite.php(43): require_once('E:\\KP\\labsepnop...')
+#9 {main}
+CRITICAL - 2022-12-22 05:42:07 --> Invalid file: ../template.php
+#0 E:\KP\labsepnop\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('../template.php')
+#1 E:\KP\labsepnop\system\View\View.php(226): CodeIgniter\View\View->render('../template', Array, true)
+#2 E:\KP\labsepnop\system\Common.php(1089): CodeIgniter\View\View->render('laboran/index', Array, true)
+#3 E:\KP\labsepnop\app\Controllers\Laboran\Dashboard.php(15): view('laboran/index', Array)
+#4 E:\KP\labsepnop\system\CodeIgniter.php(832): App\Controllers\Laboran\Dashboard->index()
+#5 E:\KP\labsepnop\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laboran\Dashboard))
+#6 E:\KP\labsepnop\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 E:\KP\labsepnop\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 E:\KP\labsepnop\system\Commands\Server\rewrite.php(43): require_once('E:\\KP\\labsepnop...')
+#9 {main}
+CRITICAL - 2022-12-22 07:19:01 --> public/vendor/fontawesome-free/css/all.min.css route cannot be found while reverse-routing.
+#0 E:\KP\labsepnop\system\Helpers\url_helper.php(538): CodeIgniter\Router\Exceptions\RouterException::forInvalidRoute('public/vendor/f...')
+#1 E:\KP\labsepnop\app\Views\laboran\template.php(15): url_to('public/vendor/f...')
+#2 E:\KP\labsepnop\system\View\View.php(210): include('E:\\KP\\labsepnop...')
+#3 E:\KP\labsepnop\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#4 E:\KP\labsepnop\system\View\View.php(226): CodeIgniter\View\View->render('laboran/templat...', Array, true)
+#5 E:\KP\labsepnop\system\Common.php(1089): CodeIgniter\View\View->render('laboran/index', Array, true)
+#6 E:\KP\labsepnop\app\Controllers\Laboran\Dashboard.php(15): view('laboran/index', Array)
+#7 E:\KP\labsepnop\system\CodeIgniter.php(832): App\Controllers\Laboran\Dashboard->index()
+#8 E:\KP\labsepnop\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laboran\Dashboard))
+#9 E:\KP\labsepnop\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 E:\KP\labsepnop\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#11 E:\KP\labsepnop\system\Commands\Server\rewrite.php(43): require_once('E:\\KP\\labsepnop...')
+#12 {main}

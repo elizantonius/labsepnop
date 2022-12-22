@@ -4,14 +4,14 @@ namespace App\Controllers\Laboran;
 
 use App\Controllers\BaseController;
 
-class Dashboard extends BaseController
+class Upmodul extends BaseController
 {
     public function index()
     {
         $data = [
             'title' => 'Dashboard | Laboran',
-            'subtitle' => 'Hallo Laboran SEPNOP',
+            'subtitle' => 'Upload Modul Praktikum',
         ];
-        echo view('laboran/index', $data);
+        echo view('laboran/upmodul', $data);
     }
 }
