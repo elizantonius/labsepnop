@@ -1,0 +1,11 @@
+CRITICAL - 2022-12-22 02:25:04 --> There is no data to insert.
+#0 E:\KP\labsepnop\system\BaseModel.php(1574): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('insert')
+#1 E:\KP\labsepnop\system\BaseModel.php(704): CodeIgniter\BaseModel->transformDataToArray(NULL, 'insert')
+#2 E:\KP\labsepnop\system\Model.php(625): CodeIgniter\BaseModel->insert(NULL, true)
+#3 E:\KP\labsepnop\app\Controllers\KrsMhs.php(29): CodeIgniter\Model->insert(NULL)
+#4 E:\KP\labsepnop\system\CodeIgniter.php(832): App\Controllers\KrsMhs->addmahasiswa()
+#5 E:\KP\labsepnop\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KrsMhs))
+#6 E:\KP\labsepnop\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 E:\KP\labsepnop\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 E:\KP\labsepnop\system\Commands\Server\rewrite.php(43): require_once('E:\\KP\\labsepnop...')
+#9 {main}

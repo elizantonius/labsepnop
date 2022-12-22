@@ -40,6 +40,7 @@ $routes->post('login', 'Login::index');
 $routes->get('dashboard', 'Dashboard::dash');
 $routes->get('tahunakademik/getta', 'Tahunakademik::getTA');
 
+
 //Mahasiswa(KRS)
 $routes->get('krsmhs', 'KrsMhs::index');
 $routes->post('krsmhs/addmahasiswa', 'KrsMhs::addmahasiswa');
@@ -53,7 +54,9 @@ $routes->get('dtlkrs/ambildata', 'DtlKrs::ambildata');
 //Praktikum
 $routes->resource('JadwalPraktikum');
 $routes->resource('JadwalPraktikum/addJadwal');
-$routes->resource('ModulRest');
+$routes->resource('Modulrest/tabelmodul');
+$routes->resource('Absen');
+$routes->resource('Modullab');
 $routes->resource('ModulRest/addModul');
 
 //Tahun Akademik
