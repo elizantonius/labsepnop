@@ -27,8 +27,9 @@
                         <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
                     </div>
                     <div class="custom-file">
+                    <label for="exampleInputEmail1">Judul Modul</label>
                         <input type="file" class="custom-file-input" id="validatedCustomFile" required>
-                        <label class="custom-file-label" for="validatedCustomFile">Choose file...</label>
+                        <label class="custom-file-label" for="validatedCustomFile">Upload Modul...</label>
                         <div class="invalid-feedback">Example invalid custom file feedback</div>
                     </div>
                     <hr>
