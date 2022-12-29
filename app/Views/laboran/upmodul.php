@@ -15,7 +15,15 @@
                 Upload Modul
             </div>
             <div class="card-body">
-                <form action="<?= base_url('laboran/upmodul/postmodul'); ?>" method="POST">
+                <?php if(!empty(session()->getFlashdata('Kesalahan'))) : ?>
+                <div class="alert alert-danger" role="alert">
+                    <h4>Periksan Input Form</h4>
+                    </hr />
+                    <?= session()->getFlashdata('Kesalahan') ?>
+                    <?php endif; ?>
+
+                </div>
+                <form action="<?= base_url('laboran/upmodul/postmodul'); ?>" method="POST" enctype="multipart/form-data">
                     <div class="form-group">
                         <label for="exampleInputEmail1">Judul Modul</label>
                         <input type="text" class="form-control"  placeholder="Judul Modul" name="judul">

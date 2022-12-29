@@ -4,6 +4,8 @@ namespace App\Controllers\Laboran;
 
 use App\Controllers\BaseController;
 use App\Models\Modul;
+use CodeIgniter\HTTP\Files\UploadedFile;
+$validation = \Config\Services::validation();
 
 class Upmodul extends BaseController
 {
@@ -22,33 +24,44 @@ class Upmodul extends BaseController
 
         $mmodel = new Modul();
 
-        $periksa = $this->validate([
+        if(!$this->validate([
 
-            'modulku' => [
+            'nama_modul' => [
+                'rules' => 'required',
+                'errors' => [
+                    'required' => 'Nama Modul tidak boleh kosong'
+                ]
+                ],
+            'semester' => [
+                'rules' => 'required',
+                'errors' => [
+                    'required' => 'Semester tidak boleh kosong'
+                ]
+                ],
+                'modulku' =>[
+                    'uploaded' => '[modulku]',
+                    'mime_in' => '[modulku,application/pdf]',
+                    'max_size' => '[modulku, 5000]'
+                ]
+        ]
 
-                'uploaded[modulku]',
-                'mime_in[pdf,application]',
-                'max_size[modulku,5000]'
-            ],
+        )){
+
+            session()->setFlashdata('Kesalahan', $this->validator->listErrors());
+            return redirect()->back()->withInput();
+        }
+
+        $datamodul = $this->request->getFile('modulku');
+        $filenama = $datamodul->getRandomName();
+        $mmodel->insert([
+
+            'nama_modul' => $this->request->getPost('judul'),
+            'semester' => $this->request->getPost('smt'),
+            'modulku' => $filenama
 
         ]);
-
-        if ($periksa) {
-
-            $file = $this->request->getFile('modulku');
-
-            $mmodel->insert([
-
-                'judul' => $this->request->getPost('nama_modul'),
-                'smt' => $this->request->getPost('semester')
-
-            ]);
-
-            $file->move(WRITEPATH . 'public/Modullab');
-            return redirect()->to('Laboran/Dashboard');
-        } else {
-
-            return redirect()->to('Laboran/Upmodul');
-        }
+        $datamodul->move('public/Modullab', $filenama);
+        session()->setFlashdata('Sukses','Modul berhasil di Upload');
+        return redirect()->to(base_url('Laboran/Dashboard'));
     }
 }

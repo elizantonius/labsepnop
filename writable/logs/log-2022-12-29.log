@@ -40,3 +40,102 @@ CRITICAL - 2022-12-29 02:24:30 --> Call to a member function hasMoved() on null
 #3 E:\KP\labsepnop\public\index.php(37): CodeIgniter\CodeIgniter->run()
 #4 E:\KP\labsepnop\system\Commands\Server\rewrite.php(43): require_once('E:\\KP\\labsepnop...')
 #5 {main}
+CRITICAL - 2022-12-29 08:16:58 -->  mime_in is not a valid rule.
+#0 E:\KP\labsepnop\system\Validation\Validation.php(300): CodeIgniter\Validation\Exceptions\ValidationException::forRuleNotFound(' mime_in')
+#1 E:\KP\labsepnop\system\Validation\Validation.php(157): CodeIgniter\Validation\Validation->processRules('modulku', 'modulku', NULL, Array, Array)
+#2 E:\KP\labsepnop\system\Controller.php(160): CodeIgniter\Validation\Validation->run()
+#3 E:\KP\labsepnop\app\Controllers\Laboran\Upmodul.php(29): CodeIgniter\Controller->validate(Array)
+#4 E:\KP\labsepnop\system\CodeIgniter.php(832): App\Controllers\Laboran\Upmodul->postmodul()
+#5 E:\KP\labsepnop\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laboran\Upmodul))
+#6 E:\KP\labsepnop\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 E:\KP\labsepnop\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 E:\KP\labsepnop\system\Commands\Server\rewrite.php(43): require_once('E:\\KP\\labsepnop...')
+#9 {main}
+CRITICAL - 2022-12-29 08:20:50 -->  mime_in is not a valid rule.
+#0 E:\KP\labsepnop\system\Validation\Validation.php(300): CodeIgniter\Validation\Exceptions\ValidationException::forRuleNotFound(' mime_in')
+#1 E:\KP\labsepnop\system\Validation\Validation.php(157): CodeIgniter\Validation\Validation->processRules('modulku', 'modulku', NULL, Array, Array)
+#2 E:\KP\labsepnop\system\Controller.php(160): CodeIgniter\Validation\Validation->run()
+#3 E:\KP\labsepnop\app\Controllers\Laboran\Upmodul.php(29): CodeIgniter\Controller->validate(Array)
+#4 E:\KP\labsepnop\system\CodeIgniter.php(832): App\Controllers\Laboran\Upmodul->postmodul()
+#5 E:\KP\labsepnop\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laboran\Upmodul))
+#6 E:\KP\labsepnop\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 E:\KP\labsepnop\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 E:\KP\labsepnop\system\Commands\Server\rewrite.php(43): require_once('E:\\KP\\labsepnop...')
+#9 {main}
+CRITICAL - 2022-12-29 08:21:30 -->  mime_in is not a valid rule.
+#0 E:\KP\labsepnop\system\Validation\Validation.php(300): CodeIgniter\Validation\Exceptions\ValidationException::forRuleNotFound(' mime_in')
+#1 E:\KP\labsepnop\system\Validation\Validation.php(157): CodeIgniter\Validation\Validation->processRules('modulku', 'modulku', NULL, Array, Array)
+#2 E:\KP\labsepnop\system\Controller.php(160): CodeIgniter\Validation\Validation->run()
+#3 E:\KP\labsepnop\app\Controllers\Laboran\Upmodul.php(29): CodeIgniter\Controller->validate(Array)
+#4 E:\KP\labsepnop\system\CodeIgniter.php(832): App\Controllers\Laboran\Upmodul->postmodul()
+#5 E:\KP\labsepnop\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laboran\Upmodul))
+#6 E:\KP\labsepnop\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 E:\KP\labsepnop\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 E:\KP\labsepnop\system\Commands\Server\rewrite.php(43): require_once('E:\\KP\\labsepnop...')
+#9 {main}
+CRITICAL - 2022-12-29 08:29:13 -->  mime_in is not a valid rule.
+#0 E:\KP\labsepnop\system\Validation\Validation.php(300): CodeIgniter\Validation\Exceptions\ValidationException::forRuleNotFound(' mime_in')
+#1 E:\KP\labsepnop\system\Validation\Validation.php(157): CodeIgniter\Validation\Validation->processRules('modulku', 'modulku', NULL, Array, Array)
+#2 E:\KP\labsepnop\system\Controller.php(160): CodeIgniter\Validation\Validation->run()
+#3 E:\KP\labsepnop\app\Controllers\Laboran\Upmodul.php(30): CodeIgniter\Controller->validate(Array)
+#4 E:\KP\labsepnop\system\CodeIgniter.php(832): App\Controllers\Laboran\Upmodul->postmodul()
+#5 E:\KP\labsepnop\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laboran\Upmodul))
+#6 E:\KP\labsepnop\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 E:\KP\labsepnop\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 E:\KP\labsepnop\system\Commands\Server\rewrite.php(43): require_once('E:\\KP\\labsepnop...')
+#9 {main}
+CRITICAL - 2022-12-29 08:40:30 --> Harus ada file yang di upload is not a valid rule.
+#0 E:\KP\labsepnop\system\Validation\Validation.php(300): CodeIgniter\Validation\Exceptions\ValidationException::forRuleNotFound('Harus ada file ...')
+#1 E:\KP\labsepnop\system\Validation\Validation.php(157): CodeIgniter\Validation\Validation->processRules('modulku', 'modulku', NULL, Array, Array)
+#2 E:\KP\labsepnop\system\Controller.php(160): CodeIgniter\Validation\Validation->run()
+#3 E:\KP\labsepnop\app\Controllers\Laboran\Upmodul.php(30): CodeIgniter\Controller->validate(Array)
+#4 E:\KP\labsepnop\system\CodeIgniter.php(832): App\Controllers\Laboran\Upmodul->postmodul()
+#5 E:\KP\labsepnop\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laboran\Upmodul))
+#6 E:\KP\labsepnop\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 E:\KP\labsepnop\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 E:\KP\labsepnop\system\Commands\Server\rewrite.php(43): require_once('E:\\KP\\labsepnop...')
+#9 {main}
+CRITICAL - 2022-12-29 08:41:30 --> modulku is not a valid rule.
+#0 E:\KP\labsepnop\system\Validation\Validation.php(300): CodeIgniter\Validation\Exceptions\ValidationException::forRuleNotFound('modulku')
+#1 E:\KP\labsepnop\system\Validation\Validation.php(157): CodeIgniter\Validation\Validation->processRules('modulku', 'modulku', NULL, Array, Array)
+#2 E:\KP\labsepnop\system\Controller.php(160): CodeIgniter\Validation\Validation->run()
+#3 E:\KP\labsepnop\app\Controllers\Laboran\Upmodul.php(30): CodeIgniter\Controller->validate(Array)
+#4 E:\KP\labsepnop\system\CodeIgniter.php(832): App\Controllers\Laboran\Upmodul->postmodul()
+#5 E:\KP\labsepnop\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laboran\Upmodul))
+#6 E:\KP\labsepnop\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 E:\KP\labsepnop\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 E:\KP\labsepnop\system\Commands\Server\rewrite.php(43): require_once('E:\\KP\\labsepnop...')
+#9 {main}
+CRITICAL - 2022-12-29 08:42:27 -->  is not a valid rule.
+#0 E:\KP\labsepnop\system\Validation\Validation.php(300): CodeIgniter\Validation\Exceptions\ValidationException::forRuleNotFound('')
+#1 E:\KP\labsepnop\system\Validation\Validation.php(157): CodeIgniter\Validation\Validation->processRules('modulku', 'modulku', NULL, Array, Array)
+#2 E:\KP\labsepnop\system\Controller.php(160): CodeIgniter\Validation\Validation->run()
+#3 E:\KP\labsepnop\app\Controllers\Laboran\Upmodul.php(30): CodeIgniter\Controller->validate(Array)
+#4 E:\KP\labsepnop\system\CodeIgniter.php(832): App\Controllers\Laboran\Upmodul->postmodul()
+#5 E:\KP\labsepnop\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laboran\Upmodul))
+#6 E:\KP\labsepnop\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 E:\KP\labsepnop\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 E:\KP\labsepnop\system\Commands\Server\rewrite.php(43): require_once('E:\\KP\\labsepnop...')
+#9 {main}
+CRITICAL - 2022-12-29 08:42:49 -->  is not a valid rule.
+#0 E:\KP\labsepnop\system\Validation\Validation.php(300): CodeIgniter\Validation\Exceptions\ValidationException::forRuleNotFound('')
+#1 E:\KP\labsepnop\system\Validation\Validation.php(157): CodeIgniter\Validation\Validation->processRules('nama_modul', 'nama_modul', NULL, Array, Array)
+#2 E:\KP\labsepnop\system\Controller.php(160): CodeIgniter\Validation\Validation->run()
+#3 E:\KP\labsepnop\app\Controllers\Laboran\Upmodul.php(30): CodeIgniter\Controller->validate(Array)
+#4 E:\KP\labsepnop\system\CodeIgniter.php(832): App\Controllers\Laboran\Upmodul->postmodul()
+#5 E:\KP\labsepnop\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laboran\Upmodul))
+#6 E:\KP\labsepnop\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 E:\KP\labsepnop\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 E:\KP\labsepnop\system\Commands\Server\rewrite.php(43): require_once('E:\\KP\\labsepnop...')
+#9 {main}
+CRITICAL - 2022-12-29 08:47:54 -->  is not a valid rule.
+#0 E:\KP\labsepnop\system\Validation\Validation.php(300): CodeIgniter\Validation\Exceptions\ValidationException::forRuleNotFound('')
+#1 E:\KP\labsepnop\system\Validation\Validation.php(157): CodeIgniter\Validation\Validation->processRules('modulku', 'modulku', NULL, Array, Array)
+#2 E:\KP\labsepnop\system\Controller.php(160): CodeIgniter\Validation\Validation->run()
+#3 E:\KP\labsepnop\app\Controllers\Laboran\Upmodul.php(30): CodeIgniter\Controller->validate(Array)
+#4 E:\KP\labsepnop\system\CodeIgniter.php(832): App\Controllers\Laboran\Upmodul->postmodul()
+#5 E:\KP\labsepnop\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laboran\Upmodul))
+#6 E:\KP\labsepnop\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 E:\KP\labsepnop\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 E:\KP\labsepnop\system\Commands\Server\rewrite.php(43): require_once('E:\\KP\\labsepnop...')
+#9 {main}
