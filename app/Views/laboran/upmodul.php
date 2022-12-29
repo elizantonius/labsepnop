@@ -15,20 +15,20 @@
                 Upload Modul
             </div>
             <div class="card-body">
-                <form>
+                <form action="<?= base_url('laboran/upmodul/postmodul'); ?>" method="POST">
                     <div class="form-group">
                         <label for="exampleInputEmail1">Judul Modul</label>
-                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Judul Modul">
+                        <input type="text" class="form-control"  placeholder="Judul Modul" name="judul">
                         <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
                     </div>
                     <div class="form-group">
                         <label for="exampleInputEmail1">Semester</label>
-                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Modul Untuk Semester">
+                        <input type="text" class="form-control"  placeholder="Modul Untuk Semester" name="smt">
                         <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
                     </div>
                     <div class="custom-file">
                     <label for="exampleInputEmail1">Judul Modul</label>
-                        <input type="file" class="custom-file-input" id="validatedCustomFile" required>
+                        <input type="file" class="custom-file-input" id="validatedCustomFile" required name="modulku">
                         <label class="custom-file-label" for="validatedCustomFile">Upload Modul...</label>
                         <div class="invalid-feedback">Example invalid custom file feedback</div>
                     </div>

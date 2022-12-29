@@ -1,0 +1,42 @@
+CRITICAL - 2022-12-29 02:07:42 --> Call to a member function move() on null
+#0 E:\KP\labsepnop\system\CodeIgniter.php(832): App\Controllers\Laboran\Upmodul->postmodul()
+#1 E:\KP\labsepnop\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laboran\Upmodul))
+#2 E:\KP\labsepnop\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 E:\KP\labsepnop\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 E:\KP\labsepnop\system\Commands\Server\rewrite.php(43): require_once('E:\\KP\\labsepnop...')
+#5 {main}
+CRITICAL - 2022-12-29 02:08:32 --> Call to a member function move() on null
+#0 E:\KP\labsepnop\system\CodeIgniter.php(832): App\Controllers\Laboran\Upmodul->postmodul()
+#1 E:\KP\labsepnop\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laboran\Upmodul))
+#2 E:\KP\labsepnop\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 E:\KP\labsepnop\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 E:\KP\labsepnop\system\Commands\Server\rewrite.php(43): require_once('E:\\KP\\labsepnop...')
+#5 {main}
+CRITICAL - 2022-12-29 02:16:32 --> Call to a member function move() on null
+#0 E:\KP\labsepnop\system\CodeIgniter.php(832): App\Controllers\Laboran\Upmodul->postmodul()
+#1 E:\KP\labsepnop\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laboran\Upmodul))
+#2 E:\KP\labsepnop\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 E:\KP\labsepnop\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 E:\KP\labsepnop\system\Commands\Server\rewrite.php(43): require_once('E:\\KP\\labsepnop...')
+#5 {main}
+CRITICAL - 2022-12-29 02:21:15 --> Call to a member function move() on null
+#0 E:\KP\labsepnop\system\CodeIgniter.php(832): App\Controllers\Laboran\Upmodul->postmodul()
+#1 E:\KP\labsepnop\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laboran\Upmodul))
+#2 E:\KP\labsepnop\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 E:\KP\labsepnop\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 E:\KP\labsepnop\system\Commands\Server\rewrite.php(43): require_once('E:\\KP\\labsepnop...')
+#5 {main}
+CRITICAL - 2022-12-29 02:24:16 --> Call to a member function hasMoved() on null
+#0 E:\KP\labsepnop\system\CodeIgniter.php(832): App\Controllers\Laboran\Upmodul->postmodul()
+#1 E:\KP\labsepnop\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laboran\Upmodul))
+#2 E:\KP\labsepnop\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 E:\KP\labsepnop\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 E:\KP\labsepnop\system\Commands\Server\rewrite.php(43): require_once('E:\\KP\\labsepnop...')
+#5 {main}
+CRITICAL - 2022-12-29 02:24:30 --> Call to a member function hasMoved() on null
+#0 E:\KP\labsepnop\system\CodeIgniter.php(832): App\Controllers\Laboran\Upmodul->postmodul()
+#1 E:\KP\labsepnop\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laboran\Upmodul))
+#2 E:\KP\labsepnop\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 E:\KP\labsepnop\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 E:\KP\labsepnop\system\Commands\Server\rewrite.php(43): require_once('E:\\KP\\labsepnop...')
+#5 {main}

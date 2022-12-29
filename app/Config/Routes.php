@@ -70,6 +70,7 @@ $routes->post('user/addusers', 'Userss::addusers');
 //Laboran
 $routes->resource('Laboran/Dashboard');
 $routes->resource('Laboran/Upmodul');
+$routes->resource('Laboran/Upmodul/postmodul');
 $routes->resource('Laboran/Opabsen');
 
 
