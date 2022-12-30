@@ -22,26 +22,16 @@ class Upmodul extends BaseController
     public function postmodul()
     {
 
+        helper(['form']);
+
         $mmodel = new Modul();
 
         if(!$this->validate([
 
-            'nama_modul' => [
-                'rules' => 'required',
-                'errors' => [
-                    'required' => 'Nama Modul tidak boleh kosong'
-                ]
-                ],
-            'semester' => [
-                'rules' => 'required',
-                'errors' => [
-                    'required' => 'Semester tidak boleh kosong'
-                ]
-                ],
                 'modulku' =>[
-                    'uploaded' => '[modulku]',
-                    'mime_in' => '[modulku,application/pdf]',
-                    'max_size' => '[modulku, 5000]'
+                    'uploaded[modulku]',
+                    'mime_in[modulku,application/pdf]',
+                    'max_size[modulku,5000]'
                 ]
         ]
 
