@@ -11,6 +11,7 @@ class Absen extends BaseController
         $data = [
             'title' => 'Dashboard | Laboratorim',
             'subtitle' => 'Absensi Praktikum',
+            'menu' => 'absen',
         ];
         echo view('absen', $data);
     }

@@ -12,7 +12,7 @@
     <title><?=$title;?></title>
 
     <!-- Custom fonts for this template-->
-    <link href="/public/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link href="/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
     <link
         href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
         rel="stylesheet">
@@ -32,7 +32,7 @@
         <ul class="navbar-nav sidebar sidebar-dark accordion" id="accordionSidebar" style="background: rgb(144, 2, 22); background: linear-gradient(324deg,rgba(144, 2, 22, 1) 0%,rgba(200, 35, 41, 1) 100%);">
 
             <!-- Sidebar - Brand -->
-            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
+            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="Dashboard">
                 <div class="sidebar-brand-icon rotate-n-15">
                     <i class="fas fa-laugh-wink"></i>
                 </div>
@@ -43,8 +43,8 @@
             <hr class="sidebar-divider my-0">
 
             <!-- Nav Item - Dashboard -->
-            <li class="nav-item active">
-                <a class="nav-link" href="index.html">
+            <li class="nav-item <?=$menu == 'dashboard' ? "active" : "";?>">
+                <a class="nav-link" href="Dashboard">
                     <i class="fas fa-fw fa-tachometer-alt"></i>
                     <span>Laboran</span></a>
             </li>
@@ -59,14 +59,14 @@
 
             <!-- Nav Item - Pages Collapse Menu -->
 
-            <li class="nav-item">
-                <a class="nav-link" href="<?= base_url('laboran/opabsen') ?>">
+            <li class="nav-item <?=$menu == 'opabsen' ? "active" : "";?>">
+                <a class="nav-link" href="<?=base_url('laboran/opabsen')?>">
                     <i class="fas fa-fw fa-table"></i>
                     <span>Buka Absen</span></a>
             </li>
 
-            <li class="nav-item">
-                <a class="nav-link" href="<?= base_url('laboran/upmodul') ?>">
+            <li class="nav-item <?=$menu == 'upmodul' ? "active" : "";?>">
+                <a class="nav-link" href="<?=base_url('laboran/upmodul')?>">
                     <i class="fas fa-fw fa-table"></i>
                     <span>Upload Modul</span></a>
             </li>
@@ -186,7 +186,7 @@
                             <input type="text" class="form-control bg-light border-0 small" placeholder="Search for..."
                                 aria-label="Search" aria-describedby="basic-addon2">
                             <div class="input-group-append">
-                                <button class="btn" type="button" style="color:white;background-color:#a70221;">
+                                <button class="btn" type="button" style="color:white; background-color:#a70221;">
                                     <i class="fas fa-search fa-sm"></i>
                                 </button>
                             </div>

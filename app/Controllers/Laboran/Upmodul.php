@@ -4,7 +4,7 @@ namespace App\Controllers\Laboran;
 
 use App\Controllers\BaseController;
 use App\Models\Modul;
-use CodeIgniter\HTTP\Files\UploadedFile;
+
 $validation = \Config\Services::validation();
 
 class Upmodul extends BaseController
@@ -15,6 +15,7 @@ class Upmodul extends BaseController
         $data = [
             'title' => 'Dashboard | Laboran',
             'subtitle' => 'Upload Modul Praktikum',
+            'menu' => 'upmodul',
         ];
         echo view('laboran/upmodul', $data);
     }
@@ -26,16 +27,16 @@ class Upmodul extends BaseController
 
         $mmodel = new Modul();
 
-        if(!$this->validate([
+        if (!$this->validate([
 
-                'modulku' =>[
-                    'uploaded[modulku]',
-                    'mime_in[modulku,application/pdf]',
-                    'max_size[modulku,5000]'
-                ]
+            'modulku' => [
+                'uploaded[modulku]',
+                'mime_in[modulku,application/pdf]',
+                'max_size[modulku,5000]',
+            ],
         ]
 
-        )){
+        )) {
 
             session()->setFlashdata('Kesalahan', $this->validator->listErrors());
             return redirect()->back()->withInput();
@@ -47,11 +48,11 @@ class Upmodul extends BaseController
 
             'nama_modul' => $this->request->getPost('judul'),
             'semester' => $this->request->getPost('smt'),
-            'modulku' => $filenama
+            'modulku' => $filenama,
 
         ]);
         $datamodul->move('public/Modullab', $filenama);
-        session()->setFlashdata('Sukses','Modul berhasil di Upload');
+        session()->setFlashdata('Sukses', 'Modul berhasil di Upload');
         return redirect()->to(base_url('Laboran/Dashboard'));
     }
 }

@@ -1,0 +1,26 @@
+CRITICAL - 2023-01-06 00:02:40 --> Undefined variable $menu
+#0 D:\Kuliah\KP\lab\labsepnop\app\Views\template.php(44): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'D:\\Kuliah\\KP\\la...', 44)
+#1 D:\Kuliah\KP\lab\labsepnop\system\View\View.php(210): include('D:\\Kuliah\\KP\\la...')
+#2 D:\Kuliah\KP\lab\labsepnop\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 D:\Kuliah\KP\lab\labsepnop\system\View\View.php(226): CodeIgniter\View\View->render('template', Array, true)
+#4 D:\Kuliah\KP\lab\labsepnop\system\Common.php(1089): CodeIgniter\View\View->render('modul', Array, true)
+#5 D:\Kuliah\KP\lab\labsepnop\app\Controllers\Modullab.php(15): view('modul', Array)
+#6 D:\Kuliah\KP\lab\labsepnop\system\CodeIgniter.php(832): App\Controllers\Modullab->index()
+#7 D:\Kuliah\KP\lab\labsepnop\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Modullab))
+#8 D:\Kuliah\KP\lab\labsepnop\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\Kuliah\KP\lab\labsepnop\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 D:\Kuliah\KP\lab\labsepnop\system\Commands\Server\rewrite.php(43): require_once('D:\\Kuliah\\KP\\la...')
+#11 {main}
+CRITICAL - 2023-01-06 00:03:17 --> Undefined variable $menu
+#0 D:\Kuliah\KP\lab\labsepnop\app\Views\template.php(44): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'D:\\Kuliah\\KP\\la...', 44)
+#1 D:\Kuliah\KP\lab\labsepnop\system\View\View.php(210): include('D:\\Kuliah\\KP\\la...')
+#2 D:\Kuliah\KP\lab\labsepnop\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 D:\Kuliah\KP\lab\labsepnop\system\View\View.php(226): CodeIgniter\View\View->render('template', Array, true)
+#4 D:\Kuliah\KP\lab\labsepnop\system\Common.php(1089): CodeIgniter\View\View->render('modul', Array, true)
+#5 D:\Kuliah\KP\lab\labsepnop\app\Controllers\Modullab.php(15): view('modul', Array)
+#6 D:\Kuliah\KP\lab\labsepnop\system\CodeIgniter.php(832): App\Controllers\Modullab->index()
+#7 D:\Kuliah\KP\lab\labsepnop\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Modullab))
+#8 D:\Kuliah\KP\lab\labsepnop\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\Kuliah\KP\lab\labsepnop\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 D:\Kuliah\KP\lab\labsepnop\system\Commands\Server\rewrite.php(43): require_once('D:\\Kuliah\\KP\\la...')
+#11 {main}

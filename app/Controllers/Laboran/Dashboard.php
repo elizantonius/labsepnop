@@ -11,6 +11,7 @@ class Dashboard extends BaseController
         $data = [
             'title' => 'Dashboard | Laboran',
             'subtitle' => 'Hallo Laboran SEPNOP',
+            'menu' => 'dashboard',
         ];
         echo view('laboran/index', $data);
     }

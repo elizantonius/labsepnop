@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title><?= $title; ?></title>
+    <title><?=$title;?></title>
 
     <!-- Custom fonts for this template-->
     <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -41,8 +41,8 @@
             <hr class="sidebar-divider my-0">
 
             <!-- Nav Item - Dashboard -->
-            <li class="nav-item active">
-                <a class="nav-link" href="index.html">
+            <li class="nav-item <?=$menu == 'dashboard' ? "active" : "";?>">
+                <a class="nav-link" href="dashboard">
                     <i class="fas fa-fw fa-tachometer-alt"></i>
                     <span>Dashboard</span></a>
             </li>
@@ -57,14 +57,14 @@
 
             <!-- Nav Item - Pages Collapse Menu -->
 
-            <li class="nav-item">
-                <a class="nav-link" href="<?= base_url('absen')?>">
+            <li class="nav-item <?=$menu == 'absen' ? "active" : "";?>">
+                <a class="nav-link" href="<?=base_url('absen')?>">
                     <i class="fas fa-fw fa-table"></i>
                     <span>Abesen</span></a>
             </li>
 
-            <li class="nav-item">
-                <a class="nav-link" href="<?= base_url('modullab'); ?>">
+            <li class="nav-item <?=$menu == 'modul' ? "active" : "";?>">
+                <a class="nav-link" href="<?=base_url('modullab');?>">
                     <i class="fas fa-fw fa-table"></i>
                     <span>Modul</span></a>
             </li>
@@ -294,10 +294,10 @@
                 <!-- Begin Page Content -->
                 <div class="container-fluid">
                     <div class="d-sm-flex align-items-center justify-content-between mb-4">
-                        <h1 class="h3 mb-0 text-gray-800"><?= $subtitle; ?></h1>
+                        <h1 class="h3 mb-0 text-gray-800"><?=$subtitle;?></h1>
                     </div>
 
-                    <?= $this->renderSection('content'); ?>
+                    <?=$this->renderSection('content');?>
 
                 </div>
                 <!-- /.container-fluid -->

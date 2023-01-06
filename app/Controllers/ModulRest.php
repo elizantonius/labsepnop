@@ -3,8 +3,8 @@
 namespace App\Controllers;
 
 // use CodeIgniter\RESTful\ResourceController;
-use CodeIgniter\API\ResponseTrait;
 use App\Models\Modul;
+use CodeIgniter\API\ResponseTrait;
 use CodeIgniter\HTTP\RequestTrait;
 
 class Modulrest extends BaseController
@@ -25,6 +25,7 @@ class Modulrest extends BaseController
         $data = [
             'title' => 'Dashboard | Laboratorim',
             'subtitle' => 'Modul Praktikum',
+            'menu' => 'modul',
         ];
         echo view('modul', $data);
     }

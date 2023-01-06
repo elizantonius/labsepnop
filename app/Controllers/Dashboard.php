@@ -47,6 +47,7 @@ class Dashboard extends ResourceController
         $data = [
             'title' => 'Dashboard | Laboratorim',
             'subtitle' => 'Selamat datang di Laboratorim Sepnop',
+            'menu' => 'dashboard',
         ];
         echo view('index', $data);
     }

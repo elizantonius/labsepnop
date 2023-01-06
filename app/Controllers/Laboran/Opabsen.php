@@ -11,6 +11,7 @@ class Opabsen extends BaseController
         $data = [
             'title' => 'Dashboard | Laboran',
             'subtitle' => 'Buka Absen',
+            'menu' => 'opabsen',
         ];
         echo view('laboran/opabsen', $data);
     }

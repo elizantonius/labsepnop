@@ -11,6 +11,7 @@ class Modullab extends BaseController
         $data = [
             'title' => 'Dashboard | Laboratorim',
             'subtitle' => 'Modul Praktikum',
+            'menu' => 'modul',
         ];
         echo view('modul', $data);
     }

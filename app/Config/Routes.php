@@ -40,7 +40,6 @@ $routes->post('login', 'Login::index');
 $routes->get('dashboard', 'Dashboard::dash');
 $routes->get('tahunakademik/getta', 'Tahunakademik::getTA');
 
-
 //Mahasiswa(KRS)
 $routes->get('krsmhs', 'KrsMhs::index');
 $routes->post('krsmhs/addmahasiswa', 'KrsMhs::addmahasiswa');
@@ -72,7 +71,6 @@ $routes->resource('Laboran/Dashboard');
 $routes->resource('Laboran/Upmodul');
 $routes->resource('Laboran/Upmodul/postmodul');
 $routes->resource('Laboran/Opabsen');
-
 
 /*
  * --------------------------------------------------------------------
