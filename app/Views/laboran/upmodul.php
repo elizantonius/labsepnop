@@ -39,12 +39,14 @@
                                 <input type="text" class="form-control" placeholder="Modul Untuk Semester" name="smt">
                                 <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
                             </div>
-                            <div class="custom-file">
-                                <label for="exampleInputEmail1">Judul Modul</label>
-                                <input type="file" class="custom-file-input" id="validatedCustomFile" required
-                                    name="modulku">
-                                <label class="custom-file-label" for="validatedCustomFile">Upload Modul...</label>
-                                <div class="invalid-feedback">Example invalid custom file feedback</div>
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">Unggah Modul</label>
+                                <div class="custom-file">
+                                    <input type="file" class="custom-file-input" id="validatedCustomFile" required
+                                        name="modulku">
+                                    <label class="custom-file-label" for="validatedCustomFile">Upload Modul...</label>
+                                    <div class="invalid-feedback">Example invalid custom file feedback</div>
+                                </div>
                             </div>
                             <hr>
                             <button type="submit" class="btn btn-primary">Upload</button>
