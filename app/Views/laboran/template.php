@@ -19,6 +19,7 @@
 
     <!-- Custom styles for this template-->
     <link href="/css/sb-admin-2.min.css" rel="stylesheet">
+    <link href="/css/multiple-form.css" rel="stylesheet">
 
 
 </head>
@@ -71,8 +72,8 @@
                     <span>Upload Modul</span></a>
             </li>
 
-            <li class="nav-item">
-                <a class="nav-link" href="tables.html">
+            <li class="nav-item <?=$menu == 'rekap' ? "active" : "";?>">
+                <a class="nav-link" href="rekap">
                     <i class="fas fa-fw fa-table"></i>
                     <span>Rekap Nilai</span></a>
             </li>
@@ -380,6 +381,7 @@
     <!-- Page level custom scripts -->
     <script src="/js/demo/chart-area-demo.js"></script>
     <script src="/js/demo/chart-pie-demo.js"></script>
+    <script src="/js/multiple-form.js"></script>
 
 </body>
 

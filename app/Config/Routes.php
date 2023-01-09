@@ -71,6 +71,7 @@ $routes->resource('Laboran/Dashboard');
 $routes->resource('Laboran/Upmodul');
 $routes->resource('Laboran/Upmodul/postmodul');
 $routes->resource('Laboran/Opabsen');
+$routes->resource('Laboran/Rekap');
 
 /*
  * --------------------------------------------------------------------
